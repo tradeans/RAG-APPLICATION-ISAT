@@ -1,5 +1,6 @@
 import os
 import logging
+import streamlit as st
 from langchain_community.document_loaders import PyPDFLoader, Docx2txtLoader, TextLoader
 from langchain_community.vectorstores import Chroma
 from langchain_openai import OpenAIEmbeddings
@@ -15,7 +16,7 @@ logging.basicConfig(level=logging.DEBUG)
 load_dotenv()
 
 # Fetch the OpenAI API key from environment variables
-api_key = os.getenv("OPENAI_API_KEY")
+api_key = st.secrets["general"]["OPENAI_API_KEY"]
 if not api_key:
     raise ValueError("API key is missing. Please add it to the .env file.")
 
