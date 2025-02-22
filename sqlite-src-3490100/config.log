@@ -1,7 +1,7 @@
-Invoked as: ./configure 
+Invoked as: ./configure --enable-fts5
 Tclsh: /usr/bin/tclsh
 Failed: cc -O2 -g conftest__.c -o conftest__
-/usr/bin/ld: /tmp/ccheoYZ3.o: in function `main':
+/usr/bin/ld: /tmp/ccMEttGf.o: in function `main':
 /workspaces/RAG-APPLICATION-ISAT/sqlite-src-3490100/conftest__.c:3: undefined reference to `localtime_s'
 collect2: error: ld returned 1 exit status
 child process exited abnormally
@@ -14,7 +14,7 @@ return 0;
 }
 ============
 Failed: cc -O2 -g conftest__.c -o conftest__
-/usr/bin/ld: /tmp/ccQFZFJ2.o: in function `main':
+/usr/bin/ld: /tmp/ccvECfzl.o: in function `main':
 /workspaces/RAG-APPLICATION-ISAT/sqlite-src-3490100/conftest__.c:3: undefined reference to `deflate'
 collect2: error: ld returned 1 exit status
 child process exited abnormally
@@ -51,7 +51,7 @@ return 0;
 }
 ============
 Failed: cc -O2 -g conftest__.c -o conftest__
-/usr/bin/ld: /tmp/ccLD1sID.o: in function `main':
+/usr/bin/ld: /tmp/cc5Ysluo.o: in function `main':
 /workspaces/RAG-APPLICATION-ISAT/sqlite-src-3490100/conftest__.c:3: undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
 child process exited abnormally
@@ -64,7 +64,7 @@ return 0;
 }
 ============
 Failed: cc -O2 -g conftest__.c -o conftest__
-/usr/bin/ld: /tmp/ccYwPKTs.o: in function `main':
+/usr/bin/ld: /tmp/cc1lEF39.o: in function `main':
 /workspaces/RAG-APPLICATION-ISAT/sqlite-src-3490100/conftest__.c:3: undefined reference to `pthread_mutexattr_init'
 collect2: error: ld returned 1 exit status
 child process exited abnormally
@@ -77,7 +77,7 @@ return 0;
 }
 ============
 Failed: cc -O2 -g conftest__.c -o conftest__
-/usr/bin/ld: /tmp/ccMlc8Kc.o: in function `main':
+/usr/bin/ld: /tmp/ccwpidBf.o: in function `main':
 /workspaces/RAG-APPLICATION-ISAT/sqlite-src-3490100/conftest__.c:3: undefined reference to `tgetent'
 collect2: error: ld returned 1 exit status
 child process exited abnormally
@@ -90,7 +90,7 @@ return 0;
 }
 ============
 Failed: cc -O2 -g conftest__.c -o conftest__ -lreadline
-/usr/bin/ld: /tmp/ccAG3qvA.o: in function `main':
+/usr/bin/ld: /tmp/ccUnMJCG.o: in function `main':
 /workspaces/RAG-APPLICATION-ISAT/sqlite-src-3490100/conftest__.c:3: undefined reference to `tgetent'
 collect2: error: ld returned 1 exit status
 child process exited abnormally
@@ -103,7 +103,7 @@ return 0;
 }
 ============
 Failed: cc -O2 -g conftest__.c -o conftest__ -lncurses
-/usr/bin/ld: /tmp/ccfvaXfk.o: in function `main':
+/usr/bin/ld: /tmp/ccuwKfgF.o: in function `main':
 /workspaces/RAG-APPLICATION-ISAT/sqlite-src-3490100/conftest__.c:3: undefined reference to `readline'
 collect2: error: ld returned 1 exit status
 child process exited abnormally
@@ -116,7 +116,7 @@ return 0;
 }
 ============
 Failed: cc -O2 -g conftest__.c -o conftest__
-/usr/bin/ld: /tmp/ccpZEkGV.o: in function `main':
+/usr/bin/ld: /tmp/cc8N5AaS.o: in function `main':
 /workspaces/RAG-APPLICATION-ISAT/sqlite-src-3490100/conftest__.c:3: undefined reference to `dlopen'
 collect2: error: ld returned 1 exit status
 child process exited abnormally
@@ -135,7 +135,7 @@ conftest__.c:1:13: warning: conflicting types for built-in function ‘ceil’; 
 conftest__.c:1:1: note: ‘ceil’ is declared in header ‘<math.h>’
   +++ |+#include <math.h>
     1 | extern void ceil(void);
-/usr/bin/ld: /tmp/cct38gSG.o: in function `main':
+/usr/bin/ld: /tmp/cc8nNKjB.o: in function `main':
 /workspaces/RAG-APPLICATION-ISAT/sqlite-src-3490100/conftest__.c:3: undefined reference to `ceil'
 collect2: error: ld returned 1 exit status
 child process exited abnormally

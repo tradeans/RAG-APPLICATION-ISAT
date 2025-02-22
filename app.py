@@ -3,8 +3,11 @@ import os
 from rag_methods import process_documents
 from langchain_openai import ChatOpenAI
 from langchain_community.vectorstores import Chroma
+from dotenv import load_dotenv
 
-api_key = st.secrets["general"]["OPENAI_API_KEY"]
+load_dotenv()
+
+api_key = os.getenv("OPENAI_API_KEY")
 
 # Initialize the LLM (GPT-4 model)
 llm = ChatOpenAI(model="gpt-4o", temperature=0.3, openai_api_key= api_key)

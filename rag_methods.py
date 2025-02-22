@@ -16,7 +16,7 @@ logging.basicConfig(level=logging.DEBUG)
 load_dotenv()
 
 # Fetch the OpenAI API key from environment variables
-api_key = st.secrets["general"]["OPENAI_API_KEY"]
+api_key = os.getenv("OPENAI_API_KEY")
 if not api_key:
     raise ValueError("API key is missing. Please add it to the .env file.")
 

@@ -162,7 +162,7 @@ $(B.tclsh):
 # and somewhat confusing because there's another var, $(OPTS), which
 # has a similar (but not identical) role.
 #
-OPT_FEATURE_FLAGS = -DSQLITE_ENABLE_MATH_FUNCTIONS -DSQLITE_THREADSAFE=1 $(OPTIONS)
+OPT_FEATURE_FLAGS = -DSQLITE_ENABLE_FTS5 -DSQLITE_ENABLE_MATH_FUNCTIONS -DSQLITE_THREADSAFE=1 $(OPTIONS)
 
 #
 # Version (X.Y.Z) number for the SQLite being compiled.
@@ -251,7 +251,7 @@ AS_AUTO_DEF = $(TOP)/auto.def
 # Shell commands to re-run $(TOP)/configure with the same args it was
 # invoked with to produce this makefile.
 #
-AS_AUTORECONFIG = cd /workspaces/RAG-APPLICATION-ISAT/sqlite-src-3490100 && /workspaces/RAG-APPLICATION-ISAT/sqlite-src-3490100/configure
+AS_AUTORECONFIG = cd /workspaces/RAG-APPLICATION-ISAT/sqlite-src-3490100 && /workspaces/RAG-APPLICATION-ISAT/sqlite-src-3490100/configure --enable-fts5
 
 USE_AMALGAMATION ?= 1
 LINK_TOOLS_DYNAMICALLY ?= 0
